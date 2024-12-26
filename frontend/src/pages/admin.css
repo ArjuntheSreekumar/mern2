@@ -1,0 +1,122 @@
+/* General container for the Admin panel */
+.container {
+    margin-top: 50px;
+  }
+  
+  /* Title styling */
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the Add New Tour button */
+  .mb-4 {
+    text-align: right;
+  }
+  
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Add New Tour button */
+  button.primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button.primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Button for actions like Edit and Delete */
+  button.warning {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  button.warning:hover {
+    background-color: #e0a800;
+  }
+  
+  button.danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  button.danger:hover {
+    background-color: #c82333;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  td {
+    font-size: 1rem;
+    color: #495057;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  /* Responsive table */
+  @media (max-width: 768px) {
+    table, th, td {
+      display: block;
+      width: 100%;
+    }
+  
+    th {
+      background-color: #f8f9fa;
+      font-size: 1rem;
+      padding: 10px 5px;
+    }
+  
+    td {
+      padding: 8px 5px;
+      text-align: left;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  }
+  
+  /* Aligning buttons in the table */
+  td button {
+    margin-right: 10px;
+  }
+  .d-flex.justify-content-end {
+    margin-bottom: 1rem;
+  }
+  
