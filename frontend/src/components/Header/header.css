@@ -1,0 +1,78 @@
+/* Header Section */
+.header {
+    width: 100%;
+    height: 100px; /* Increased height */
+    line-height: 100px; /* Increased line height to match new height */
+    background: linear-gradient(90deg, #ffffff, #f1f1f1); /* Gradient with white shades */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    position: relative;
+    z-index: 10;
+    padding: 0 20px; /* Added padding for more spacing */
+}
+
+/* Logo */
+.logo img {
+    width: 30%;
+    filter: brightness(1.1); /* Slightly brighten the logo */
+}
+
+/* Navigation Menu */
+.menu {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__item a {
+    text-decoration: none;
+    color: #333333; /* Dark color for contrast */
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0 1rem; /* Add spacing between menu items */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav__item a:hover {
+    color: #ff7e5f; /* Soft hover color */
+}
+
+.nav__item a.active__link {
+    color: #ffe5d1; /* Light color for active link */
+}
+
+/* Mobile Menu */
+.mobile__menu {
+    font-size: 1.3rem;
+    color: #333333;
+    display: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.mobile__menu:hover {
+    color: #ff7e5f; /* Hover color for mobile menu */
+}
+
+/* Sticky Header */
+.sticky__header {
+    width: 100%;
+    height: 100px; /* Increased height */
+    line-height: 100px; /* Increased line height to match new height */
+    background: #ffffff; /* Solid white background */
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 8px -3px #ddd; /* Light shadow */
+    z-index: 999;
+    animation: slideDown 0.3s ease; /* Smooth slide-in effect */
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
